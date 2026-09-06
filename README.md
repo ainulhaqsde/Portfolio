@@ -1,4 +1,14 @@
-# 🔷 AINUL.DEV
+<p align="center">
+  <img src="./assets/Ainul.Dev.png" alt="AINUL.DEV Logo" width="130">
+</p>
+
+<h1 align="center">AINUL.DEV</h1>
+
+<p align="center">
+  <b>Data • Code • Insights • Intelligent Solutions</b>
+</p>
+
+---
 
 ## 🌐 Ainul Haq — Portfolio
 
@@ -127,6 +137,7 @@ An interactive browser-based Snake game featuring responsive controls and dynami
 Portfolio/
 │
 ├── assets/
+│   ├── Ainul.Dev.png
 │   ├── profile.jpg
 │   ├── profile2.jpg
 │   ├── project-loop.jpg
@@ -134,7 +145,6 @@ Portfolio/
 │   ├── project2.jpg
 │   ├── project3.jpg
 │   ├── project4.jpg
-│   ├── skill-icons/
 │   └── resume.pdf
 │
 ├── index.html
@@ -202,8 +212,12 @@ The portfolio design and personal content are intended for personal portfolio an
 
 ---
 
-### ⭐ AINUL.DEV
+<h3 align="center">⭐ AINUL.DEV</h3>
 
-**Data • Code • Insights • Intelligent Solutions**
+<p align="center">
+  <b>Data • Code • Insights • Intelligent Solutions</b>
+</p>
 
-If you like this portfolio, consider giving the repository a ⭐.
+<p align="center">
+  If you like this portfolio, consider giving the repository a ⭐
+</p>
