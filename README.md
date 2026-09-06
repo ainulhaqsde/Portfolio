@@ -16,7 +16,7 @@ Welcome to **AINUL.DEV**, my personal developer portfolio showcasing my work, te
 
 I am a **Computer Science & Engineering graduate** with a strong foundation in **Data Analytics, Software Engineering, and Artificial Intelligence**. I enjoy transforming data into actionable insights, developing scalable applications, and building intelligent solutions for real-world problems.
 
-🚀 **Live Portfolio:** [AINUL.DEV](https://portfolio-ainul.vercel.app/)
+🚀 **Live Portfolio:** [AINUL.DEV](https://portfolioainuldev.vercel.app/)
 
 ---
 
@@ -82,55 +82,6 @@ I am a **Computer Science & Engineering graduate** with a strong foundation in *
 
 ---
 
-## 🚀 Featured Projects
-
-### 1. Project LOOP — AI Customer Feedback Intelligence Platform
-
-A full-stack AI-powered customer feedback intelligence and analytics platform designed to transform raw customer feedback into actionable insights.
-
-**Key Features:**
-- Sentiment Analysis
-- Theme Detection
-- Trend Analytics
-- Feedback Analytics Dashboard
-- Ask LOOP — feedback-grounded AI Q&A
-- Voice-of-Customer Reports
-- Authentication & role-based access
-
-**Tech Stack:** React.js, Node.js, Express.js, MongoDB, Gemini AI, JWT
-
----
-
-### 2. AI-Powered Text-to-Image Generator
-
-An AI-powered web application that transforms natural-language prompts into generated images using **Stable Diffusion XL**.
-
-**Tech Stack:** Python, Flask, Replicate API, SDXL, HTML, CSS, JavaScript
-
----
-
-### 3. Telly Beans — Full-Stack Food Delivery Platform
-
-A full-stack food delivery application with authentication, role-based access, shopping cart functionality, and order management.
-
-**Tech Stack:** React.js, Node.js, Express.js, MongoDB, JWT
-
----
-
-### 4. Smart Library Management System
-
-A web-based library management application designed to simplify book management, user records, and everyday library operations.
-
----
-
-### 5. Neon Snake Game
-
-An interactive browser-based Snake game featuring responsive controls and dynamic JavaScript gameplay.
-
-🎮 **Live Demo:** [Play Neon Snake](https://neonsnakegame.ainuldev.vercel.app/)
-
----
-
 ## 📂 Project Structure
 
 ```text
@@ -181,7 +132,7 @@ No additional package installation is required for the core portfolio.
 
 The portfolio is deployed using **Vercel** for fast and reliable web hosting.
 
-🚀 **Live Website:** [portfolio-ainul.vercel.app](https://portfolio-ainul.vercel.app/)
+🚀 **Live Website:** [portfolio-ainul.vercel.app](https://portfolioainuldev.vercel.app/)
 
 ---
 
