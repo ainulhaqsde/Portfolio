@@ -16,7 +16,7 @@ Welcome to **AINUL.DEV**, my personal developer portfolio showcasing my work, te
 
 I am a **Computer Science & Engineering graduate** with a strong foundation in **Data Analytics, Software Engineering, and Artificial Intelligence**. I enjoy transforming data into actionable insights, developing scalable applications, and building intelligent solutions for real-world problems.
 
-🚀 **Live Portfolio:** [AINUL.DEV](https://portfolioainuldev.vercel.app/)
+🚀 **Live Portfolio:** [AINUL.DEV](https://portfolio-ainuldev.vercel.app/)
 
 ---
 
