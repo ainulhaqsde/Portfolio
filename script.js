@@ -1023,10 +1023,192 @@ document
 
           );
 
-
         }
       );
 
-
     }
   );
+
+/* =========================================================
+   DARK / LIGHT THEME
+   ========================================================= */
+
+const themeToggle =
+  document.getElementById(
+    "theme-toggle"
+  );
+
+const themeIcon =
+  themeToggle
+    ? themeToggle.querySelector("i")
+    : null;
+
+
+/* =========================================================
+   UPDATE THEME ICON
+   ========================================================= */
+
+function updateThemeIcon(theme) {
+
+  if (!themeToggle || !themeIcon) {
+    return;
+  }
+
+
+  if (theme === "dark") {
+
+    themeIcon.classList.remove(
+      "fa-moon"
+    );
+
+    themeIcon.classList.add(
+      "fa-sun"
+    );
+
+    themeToggle.setAttribute(
+      "aria-label",
+      "Switch to light mode"
+    );
+
+    themeToggle.setAttribute(
+      "title",
+      "Switch to light mode"
+    );
+
+  }
+
+  else {
+
+    themeIcon.classList.remove(
+      "fa-sun"
+    );
+
+    themeIcon.classList.add(
+      "fa-moon"
+    );
+
+    themeToggle.setAttribute(
+      "aria-label",
+      "Switch to dark mode"
+    );
+
+    themeToggle.setAttribute(
+      "title",
+      "Switch to dark mode"
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   LOAD SAVED THEME
+   ========================================================= */
+
+function loadTheme() {
+
+  const savedTheme =
+    localStorage.getItem(
+      "portfolio-theme"
+    );
+
+
+  let theme;
+
+
+  if (
+    savedTheme === "dark" ||
+    savedTheme === "light"
+  ) {
+
+    theme = savedTheme;
+
+  }
+
+  else {
+
+    const prefersDark =
+      window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+
+    theme =
+      prefersDark
+        ? "dark"
+        : "light";
+
+  }
+
+
+  document.documentElement.setAttribute(
+    "data-theme",
+    theme
+  );
+
+
+  updateThemeIcon(
+    theme
+  );
+
+}
+
+
+/* =========================================================
+   CHANGE THEME
+   ========================================================= */
+
+function toggleTheme() {
+
+  const currentTheme =
+    document.documentElement
+      .getAttribute(
+        "data-theme"
+      );
+
+
+  const newTheme =
+    currentTheme === "dark"
+      ? "light"
+      : "dark";
+
+
+  document.documentElement.setAttribute(
+    "data-theme",
+    newTheme
+  );
+
+
+  localStorage.setItem(
+    "portfolio-theme",
+    newTheme
+  );
+
+
+  updateThemeIcon(
+    newTheme
+  );
+
+}
+
+
+/* =========================================================
+   THEME BUTTON EVENT
+   ========================================================= */
+
+if (themeToggle) {
+
+  themeToggle.addEventListener(
+    "click",
+    toggleTheme
+  );
+
+}
+
+
+/* =========================================================
+   INITIALIZE THEME
+   ========================================================= */
+
+loadTheme();
