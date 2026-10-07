@@ -4025,5 +4025,419 @@ textarea::placeholder {
 
   }
 
+}
+
+/* =========================================================
+   DARK / LIGHT THEME
+   ========================================================= */
+
+/* Smooth theme transition */
+
+html {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.theme-item {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  padding: 0;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--bg-soft);
+  color: var(--text-primary);
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--primary);
+  background: var(--primary-light);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   DARK THEME VARIABLES
+   ========================================================= */
+
+html[data-theme="dark"] {
+
+  --bg: #0b1120;
+
+  --bg-soft: #111827;
+
+  --bg-alt: #172033;
+
+  --text-primary: #f8fafc;
+
+  --text-secondary: #cbd5e1;
+
+  --text-muted: #94a3b8;
+
+  --primary: #3b82f6;
+
+  --primary-dark: #2563eb;
+
+  --primary-light: #172554;
+
+  --border: #273449;
+
+  --success: #22c55e;
+
+  --shadow-sm:
+    0 8px 25px rgba(0, 0, 0, 0.18);
+
+  --shadow-md:
+    0 16px 40px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg:
+    0 25px 70px rgba(0, 0, 0, 0.32);
+}
+
+
+/* =========================================================
+   DARK THEME — BODY
+   ========================================================= */
+
+html[data-theme="dark"] body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   DARK THEME — SCROLLBAR
+   ========================================================= */
+
+html[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+
+/* =========================================================
+   DARK THEME — NAVBAR
+   ========================================================= */
+
+html[data-theme="dark"] .navbar {
+  background: rgba(11, 17, 32, 0.92);
+
+  border-bottom-color:
+    rgba(51, 65, 85, 0.8);
+
+  box-shadow:
+    0 4px 25px rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="dark"] .navbar.scrolled {
+  box-shadow:
+    0 8px 35px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================================
+   DARK THEME — HERO
+   ========================================================= */
+
+html[data-theme="dark"] .btn.outline {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .hero-socials a {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .hero-image-wrapper > img {
+  border-color: #1e293b;
+}
+
+html[data-theme="dark"] .bg-skew {
+  background:
+    linear-gradient(
+      135deg,
+      #172554,
+      #111827
+    );
+}
+
+html[data-theme="dark"] .floating-card {
+  background:
+    rgba(17, 24, 39, 0.94);
+
+  border-color:
+    rgba(51, 65, 85, 0.9);
+}
+
+
+/* Availability badge */
+
+html[data-theme="dark"] .availability-badge {
+  background: rgba(22, 163, 74, 0.12);
+  border-color: rgba(34, 197, 94, 0.28);
+  color: #86efac;
+}
+
+
+/* =========================================================
+   DARK THEME — ABOUT
+   ========================================================= */
+
+html[data-theme="dark"] .about-section {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .experience-card,
+html[data-theme="dark"] .highlight-card,
+html[data-theme="dark"] .interests span {
+  background: var(--bg);
+}
+
+
+/* =========================================================
+   DARK THEME — SKILLS
+   ========================================================= */
+
+html[data-theme="dark"] .skills-section {
+  background: var(--bg);
+}
+
+html[data-theme="dark"] .skill-category {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .skill-category:hover {
+  background: #172033;
+}
+
+html[data-theme="dark"] .skill-card {
+  background: var(--bg-soft);
+}
+
+
+/* Slider fade left */
+
+html[data-theme="dark"] .skills-slider::before {
+  background:
+    linear-gradient(
+      to right,
+      #0b1120 20%,
+      rgba(11, 17, 32, 0)
+    );
+}
+
+
+/* Slider fade right */
+
+html[data-theme="dark"] .skills-slider::after {
+  background:
+    linear-gradient(
+      to left,
+      #0b1120 20%,
+      rgba(11, 17, 32, 0)
+    );
+}
+
+
+/* =========================================================
+   DARK THEME — PROJECTS
+   ========================================================= */
+
+html[data-theme="dark"] .projects-section {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .project-card,
+html[data-theme="dark"] .project-info {
+  background: var(--bg);
+}
+
+html[data-theme="dark"] .project-card:hover {
+  border-color: #475569;
+}
+
+html[data-theme="dark"] .github-btn {
+  background: var(--bg-soft);
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .github-btn:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  border-color: #f8fafc;
+}
+
+html[data-theme="dark"] .tech-stack span {
+  background: var(--bg-soft);
+}
+
+
+/* =========================================================
+   DARK THEME — CONTACT
+   ========================================================= */
+
+html[data-theme="dark"] .contact-section {
+  background: var(--bg);
+}
+
+html[data-theme="dark"] .contact-wrapper {
+  background: var(--bg-soft);
+}
+
+html[data-theme="dark"] .contact-form input,
+html[data-theme="dark"] .contact-form textarea {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .contact-form input::placeholder,
+html[data-theme="dark"] .contact-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   DARK THEME — NOTIFICATION
+   ========================================================= */
+
+html[data-theme="dark"] .notification {
+  background: var(--bg-soft);
+  border-color: var(--border);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .notification-content span {
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .notification-close {
+  color: var(--text-muted);
+}
+
+html[data-theme="dark"] .notification-close:hover {
+  background: var(--bg-alt);
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   DARK THEME — MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  html[data-theme="dark"] .nav-links {
+    background:
+      rgba(11, 17, 32, 0.98);
+
+    border-bottom-color:
+      var(--border);
+
+    box-shadow:
+      0 15px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .theme-item {
+    width: 100%;
+    padding: 8px 4px;
+  }
+
+  .theme-toggle {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* =========================================================
+   SMOOTH COLOR TRANSITIONS
+   ========================================================= */
+
+body,
+.navbar,
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section,
+.project-card,
+.project-info,
+.skill-card,
+.skill-category,
+.highlight-card,
+.experience-card,
+.floating-card,
+.contact-wrapper,
+.contact-form input,
+.contact-form textarea,
+.hero-socials a,
+.btn.outline,
+.interests span,
+.notification {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Respect reduced-motion accessibility setting */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .theme-toggle,
+  body,
+  .navbar,
+  section {
+    transition: none;
+  }
 
 }
